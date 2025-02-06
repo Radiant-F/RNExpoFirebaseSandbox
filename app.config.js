@@ -3,14 +3,14 @@ const IS_PREVIEW = process.env.APP_VARIANT === "preview";
 
 const getUniqueIdentifier = () => {
   if (IS_DEV) {
-    return "com.exkoi.dev.FirebaseExpoSandbox.dev";
+    return "com.rnfirebasesandbox.dev";
   }
 
   if (IS_PREVIEW) {
-    return "com.exkoi.dev.FirebaseExpoSandbox.preview";
+    return "com.rnfirebasesandbox.preview";
   }
 
-  return "com.exkoi.dev.FirebaseExpoSandbox";
+  return "com.rnfirebasesandbox";
 };
 
 const getAppName = () => {
